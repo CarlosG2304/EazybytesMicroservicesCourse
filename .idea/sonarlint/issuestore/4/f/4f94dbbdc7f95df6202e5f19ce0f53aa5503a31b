@@ -1,0 +1,13 @@
+
+z
+java:S1488>"_Immediately return this expression instead of assigning it to the temporary variable "jsonStr".(îÂ·‰ûÿÿÿÿ
+[
+java:S4684-"@Replace this persistent entity with a simple POJO or DTO object.(˜ôæÔúÿÿÿÿ
+V
+java:S4684E"@Replace this persistent entity with a simple POJO or DTO object.(¾¤Ò”
+>
+java:S1172S"(Remove this unused method parameter "t".(ÍŸ°
+y
+java:S1128"\Remove this unused import 'io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker'.(›èÌÇ8Ôàûó°0
+T
+java:S1144S">Remove this unused private "myCustomerDetailsFallBack" method.(ÍŸ°
