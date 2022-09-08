@@ -9,6 +9,9 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import lombok.AllArgsConstructor;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,6 +24,8 @@ import java.util.List;
 @AllArgsConstructor
 public class LoansController {
 
+    private static final Logger logger = LoggerFactory.getLogger(LoansController.class);
+
     private LoansRepository loansRepository;
 
     LoansServiceConfig loansConfig;
@@ -28,8 +33,9 @@ public class LoansController {
     @PostMapping("/myLoans")
     public List<Loans> getLoansDetails(@RequestHeader("eazybank-correlation-id") String correlationid,
             @RequestBody Customer customer) {
-        System.out.println("Invoking Loans Microservice");
+        logger.info("getLoansDetails() method started");
         List<Loans> loans = loansRepository.findByCustomerIdOrderByStartDtDesc(customer.getCustomerId());
+        logger.info("getLoansDetails() method ended");
         if (loans != null) {
             return loans;
         } else {
