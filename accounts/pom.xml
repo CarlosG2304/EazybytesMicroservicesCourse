@@ -123,7 +123,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<image>
-						<name>carlos2304/${project.artifactId}</name>
+						<name>carlos2304/${project.artifactId}:k8s</name>
 					</image>
 				</configuration>
 			</plugin>
