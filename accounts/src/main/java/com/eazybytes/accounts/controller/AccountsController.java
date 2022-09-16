@@ -102,6 +102,8 @@ public class AccountsController {
 	}
 
 	private String sayHelloFallback(Throwable t) {
+
 		return "Hi, Welcome to EazyBank";
+
 	}
 }
