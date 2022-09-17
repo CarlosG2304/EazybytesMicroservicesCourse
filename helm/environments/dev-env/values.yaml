@@ -4,4 +4,10 @@ global:
   activeProfile: dev
   configServerURL: configserver:http://configserver:8071/
   eurekaServerURL: http://eurekaserver:8070/eureka/
-  keyCloakURL: http://my-release-keycloak:80/realms/master/protocol/openid-connect/certs
+  keyCloakURL: http://keyclock-keycloak:80/realms/master/protocol/openid-connect/certs
+  tokenuri: http://keycloak:80/realms/master/protocol/openid-connect/token
+  authorizationuri: http://keycloak:80/realms/master/protocol/openid-connect/auth
+  userinfouri: http://keycloak:80/realms/master/protocol/openid-connect/userinfo
+  secretName: eazybankdev-secret
+  keycloakclientid: eazybank-gateway-ui
+  keycloakclientsecret: WPxkB33fHp7PB8FiVoofuaj0zQxlia9B

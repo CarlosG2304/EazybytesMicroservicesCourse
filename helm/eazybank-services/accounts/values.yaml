@@ -8,7 +8,7 @@ replicaCount: 1
 
 image:
   repository: carlos2304/accounts
-  tag: latest
+  tag: k8s
 
 containerPort: 8080
 
@@ -22,3 +22,4 @@ zipkin_enabled: true
 profile_enabled: true
 eureka_enabled: true
 keycloak_enabled: false
+resouceserver_enabled: true
